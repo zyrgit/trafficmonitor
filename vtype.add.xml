@@ -1,0 +1,9 @@
+<additional>
+
+<vType accel="3.0" decel="6.0" id="vt1" length="4.0" minGap="1.5" maxSpeed="30" sigma="0.1" speedFactor="1.0" speedDev="0.01" guiShape="passenger" vClass="passenger" impatience="0.0" color="1,0,0"/>
+
+<vType accel="3.0" decel="6.0" id="vt2" length="4.0" minGap="1.5" maxSpeed="30" sigma="0.1" speedFactor="1.0" speedDev="0.01" guiShape="passenger" vClass="passenger" impatience="0.0" color="0,1,0"/>
+
+<vType accel="3.0" decel="6.0" id="vt3" length="4.0" minGap="1.5" maxSpeed="30" sigma="0.1" speedFactor="1.0" speedDev="0.01" guiShape="passenger" vClass="passenger" impatience="0.0" color="1,1,0"/>
+
+</additional>

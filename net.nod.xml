@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<nodes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:noNamespaceSchemaLocation="http://sumo.sf.net/xsd/nodes_file.xsd">
+ 	<node id="nx1y0" x="441" y="56" type="traffic_light"/>
+	<node id="nx2y0" x="1042" y="-39" type="traffic_light"/>
+	<node id="nx3y0" x="1499" y="-8" type="traffic_light"/>
+	<node id="nx4y0" x="2024" y="46" type="traffic_light"/>
+	<node id="nx1y1" x="435" y="424" type="traffic_light"/>
+	<node id="nx2y1" x="1054" y="489" type="traffic_light"/>
+	<node id="nx3y1" x="1542" y="420" type="traffic_light"/>
+	<node id="nx4y1" x="1991" y="536" type="traffic_light"/>
+	<node id="nx1y2" x="456" y="1072" type="traffic_light"/>
+	<node id="nx2y2" x="1065" y="924" type="traffic_light"/>
+	<node id="nx3y2" x="1424" y="1007" type="traffic_light"/>
+	<node id="nx4y2" x="2071" y="981" type="traffic_light"/>
+	<node id="nx1y3" x="454" y="1487" type="traffic_light"/>
+	<node id="nx2y3" x="924" y="1455" type="traffic_light"/>
+	<node id="nx3y3" x="1490" y="1499" type="traffic_light"/>
+	<node id="nx4y3" x="1957" y="1457" type="traffic_light"/>
+	<node id="nx1y4" x="455" y="1993" type="traffic_light"/>
+	<node id="nx2y4" x="966" y="1923" type="traffic_light"/>
+	<node id="nx3y4" x="1554" y="2009" type="traffic_light"/>
+	<node id="nx4y4" x="2023" y="1949" type="traffic_light"/>
+	<node id="nx1y5" x="579" y="2558" type="traffic_light"/>
+	<node id="nx2y5" x="939" y="2473" type="traffic_light"/>
+	<node id="nx3y5" x="1536" y="2534" type="traffic_light"/>
+	<node id="nx4y5" x="2070" y="2487" type="traffic_light"/>
+	<node id="nx0y1" x="53" y="527" type="traffic_light"/>
+	<node id="nx0y2" x="-32" y="1014" type="traffic_light"/>
+	<node id="nx0y3" x="62" y="1556" type="traffic_light"/>
+	<node id="nx0y4" x="1" y="2014" type="traffic_light"/>
+	<node id="nx5y1" x="2425" y="459" type="traffic_light"/>
+	<node id="nx5y2" x="2548" y="986" type="traffic_light"/>
+	<node id="nx5y3" x="2447" y="1508" type="traffic_light"/>
+	<node id="nx5y4" x="2533" y="2028" type="traffic_light"/>
+</nodes>

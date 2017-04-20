@@ -1,0 +1,48 @@
+
+# 1gennode.py 2genedge.py 3genconnect.py--------------------
+grid.x-length=500
+grid.y-length=500
+varlength = 80
+grid.x-number=4
+grid.y-number=4
+grid.attach-length=500
+tls.yellow.time = 4  # in program: #-1
+tls.left-green.time-min=10
+tls.left-green.time-max=15
+tls.straight-green.time-min=30
+tls.straight-green.time-max=50
+tls.default-type=static
+tls.offset.max=100
+
+# 4netconvert.py --------------------
+node-files = net.nod.xml
+edge-files = net.edg.xml
+connection-files = net.con.xml
+type-files = net.typ.xml
+tllogic-files = net.tls.xml
+net-file = net.cnd.tls.net.xml
+additional-files-vtype = vtype.add.xml
+trip-files = net.trips.xml
+route-files = net.rou.xml
+
+# 5genroutes.py --------------------
+prefix = a # trip, veihcle prefix
+trip-depart-period = 3
+trip-attributes = "type=\"vt1\" departLane=\"best\" departSpeed=\"max\" departPos=\"base\" arrivalPos=\"max\""
+min-distance = 2400
+fringe-factor = 100
+routing-algorithm = 'dijkstra' # 'dijkstra' 'CH'
+duarouter-extra = # --weight-period 100 --weight-files net.weight.xml
+simulationStartTime = 0
+simulationEndTime =  5000
+tripEndTime =  2000
+disturb_edge_num = 10  # for CH
+weight_traveltime_min = 30 # used to disturb routing CH. 
+weight_traveltime_max = 150
+
+# 6gensumocfg.py --------------------
+sumo-config-file = net.sumo.cfg
+
+# runner.py ---------------
+num-log-files =10
+port = 8888
