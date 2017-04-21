@@ -314,20 +314,9 @@ class Car:
             return self.lastSetSpeed
         if self.iprint:print("update lastSetSpeed",spdcmd)
         return spdcmd
-    def adjustSpeedForGas(self,spdcmd):
-        if abs(self.nowSpeed-self.lastRealSpeed)>=0.1: # speed changing, no need 
-            return spdcmd
-        expectedGas = Car.gasCoef*(self.nowSpeed**0.5)
-        if self.lastGas>0:
-            self.avgNonIdleGas = 0.5*(self.lastGas) + 0.5*self.avgNonIdleGas
-        decprob = (self.avgNonIdleGas-expectedGas)/max(0.001,self.avgNonIdleGas)
-        if self.iprint:print("avgNonIdleGas",self.avgNonIdleGas,"expectedGas",expectedGas,"avgGas",self.avgGas,"%.2f"%decprob)
-        if random.random()<decprob:
-            spdcmd-= self.decnum*Car.dspd
-            self.decnum+=1
-        return spdcmd
+    
     def applySpeed(self,spdcmd):
-        Car.traci.vehicle.setSpeed(self.id, self.adjustSpeedForGas(spdcmd))
+        Car.traci.vehicle.setSpeed(self.id, spdcmd)
 
     def checkLane(self,):
         if self.inCross: return
