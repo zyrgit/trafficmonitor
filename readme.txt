@@ -1,3 +1,5 @@
+Please install SUMO first.
+
 ------------------- Generate road network -----------------
 Edit ./conf.txt file.
 
@@ -21,6 +23,9 @@ net.cnd.tls.net.xml is the final input to the SUMO simulation.
 ----------------- Python -------------
 Main python file connecting to SUMO simulator via Traci: 
 python ./runner.py
+
+No GUI:
+python ./runner.py -n
 
 Modules for cars: sumo_car.py
 Modules for traffic signals: sumo_tls.py

@@ -28,7 +28,6 @@ class Car:
     tDischarge = 1.0 # 1s discharge delay
     idleGas=0.2 # when not moving.
     gasCoef=0.06  # 0.?*sqrt(v) is used when speed is steady. 
-    dspd=1e-15  # dec spd by time*dspd according to expected gas.
     TimeBuf = 1.0
     id2car=None
     traci = None # shared static
