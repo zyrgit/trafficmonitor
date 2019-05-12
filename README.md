@@ -9,9 +9,3 @@ This is the example simulation of SUMO interfacing with Python on a grid road ne
 This simulation implements adaptive traffic signal control systems widely adopted in US. The main demonstration of this simulation is showing that if the traffic signals are known to vehicles, then they do not have to stop at red light.
 
 Details are in ./readme.txt file. 
-
-The paper describing this intelligent transportation system is presented at ICCPS 2017:
-
-GreenDrive: A Smartphone-based Intelligent Speed Adaptation System with Real-time Traffic Signal Prediction
-
-Contact: yrzhao1991@gmail.com
